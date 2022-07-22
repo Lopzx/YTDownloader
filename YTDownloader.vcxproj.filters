@@ -24,9 +24,18 @@
     <ClCompile Include="src\Class\Audio.h">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="src\installation.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\request_handler.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\YTDownloader.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Struct\HtmlMemory.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

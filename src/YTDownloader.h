@@ -9,5 +9,14 @@
 
 	//Dev Defined Include
 	#include "Class/Video.h"
+	#include "Struct/HtmlMemory.h"
+	
+	//instalation.cpp
+	void install();
+
+	//request.cpp
+	HtmlOnMemory get_html_doc(std::string);
+
 #endif
+
 

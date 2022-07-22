@@ -1,5 +1,10 @@
 #include "src/YTDownloader.h"
 
 int main() {
-	std::cout << "Set up" << std::endl;
+	install();
+	
+	std::string yt_url("https://www.youtube.com/watch?v=u31qwQUeGuM");
+	
+	HtmlOnMemory html = get_html_doc(yt_url);
+	std::cout << html.html << std::endl;
 }

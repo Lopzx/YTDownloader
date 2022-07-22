@@ -16,6 +16,7 @@
 
 	//request.cpp
 	HtmlOnMemory get_html_doc(std::string);
+	Video get_video_from_html(std::string);
 
 #endif
 

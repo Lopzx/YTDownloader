@@ -46,15 +46,6 @@ HtmlOnMemory get_html_doc(std::string url) {
 	return *html;
 }
 
-std::string get_url_from_cipher(std::string cipher) {
-	std::string open_needle = "url=";
-	std::string close_needle = "\"";
-	size_t open_pos = cipher.find(open_needle) + open_needle.size();
-	size_t close_pos = cipher.find(close_needle, open_pos);
-
-	return cipher.substr(open_pos, close_pos - open_pos);
-}
-
 Video get_video_from_html(std::string html) {
 	std::string opening_needle = "ytInitialPlayerResponse = ";
 	std::string closing_needle = "};";

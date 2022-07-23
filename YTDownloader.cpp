@@ -12,12 +12,16 @@ int main() {
 	json.get_video_format_list();
 	std::string video_quality = "tiny";
 	//std::cin >> video_quality;
+	std::cout << "=====Downloading Video=====" << std::endl;
 	json.download("video", video_quality);
+	std::cout << "=====Downloading Video Done=====" << std::endl;
 	//std::cin.get();
 
 	json.get_audio_format_list();
 	std::string audio_quality = "tiny";
 	//std::cin >> audio_quality;
+	std::cout << "=====Downloading Audio=====" << std::endl;
 	json.download("audio", audio_quality);
+	std::cout << "=====Downloading Audio Done=====" << std::endl;
 	//std::cin.get();
 }

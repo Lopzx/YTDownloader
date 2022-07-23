@@ -8,7 +8,7 @@
 #include <filesystem>
 #include <array>
 #include <fstream>
-
+#include <libavformat/avformat.h>
 
 struct AdaptiveStream {
 	std::string type;
@@ -59,6 +59,12 @@ class Video {
 	}
 
 public:
+
+	//Mixing
+	void muxing() {
+		
+
+	}
 
 	Video(std::string title, std::string author, std::vector<AdaptiveStream> video_list) {
 		this->title = title;
@@ -119,7 +125,6 @@ public:
 		//Clean Up
 		curl_easy_cleanup(handle);
 	}
-
 
 	void print_details() {
 		std::cout << "Title : " << title << std::endl;
